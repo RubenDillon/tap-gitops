@@ -1,0 +1,19 @@
+# Install values file for otb-supply-chain-testing-scanning.tanzu.vmware.com v0.12.5 
+registry:
+  server: "harbor.solateam.be"
+  repository: "tap-apps"
+
+gitops:
+  #REPOSITORY_PREFIX is deprecated
+  # repository_prefix: ssh://git@github.com/trevorputbrese/tap-gitops-
+  server_address: https://github.com/
+  repository_owner: RubenDillon
+  branch: main
+  username: rubendillon
+  email: ruben_dillon@hotmail.com
+  commit_message: supplychain@cluster.local
+  ssh_secret: github-http-secret    # un token creado en el namespace
+  commit_strategy: direct
+
+cluster_builder: default
+service_account: default
