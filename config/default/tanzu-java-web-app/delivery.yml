@@ -22,7 +22,7 @@ spec:
         autoscaling.knative.dev/maxScale: "1"
         autoscaling.knative.dev/minScale: "1"
         boot.spring.io/actuator: http://:8081/actuator
-        boot.spring.io/version: 2.7.4
+        boot.spring.io/version: 2.7.11
         conventions.carto.run/applied-conventions: |-
           appliveview-sample/app-live-view-appflavour-check
           developer-conventions/debug-convention
@@ -37,7 +37,7 @@ spec:
           spring-boot-convention/app-live-view-appflavour-check
           spring-boot-convention/app-live-view-connector-boot
           spring-boot-convention/app-live-view-appflavours-boot
-        developer.apps.tanzu.vmware.com/image-source-digest: main/585650cfdb05380b25ef87b761e58e8f7e20a523
+        developer.apps.tanzu.vmware.com/image-source-digest: harbor.solateam.be/tap-apps/tanzu-java-web-app:latest@sha256:e5808159b5ec01a7f69a29d34dc33f7958811d0c6582c151181aae6a43029efe
         developer.conventions/target-containers: workload
       labels:
         app.kubernetes.io/component: run
@@ -61,7 +61,7 @@ spec:
           value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.solateam.be/tap-apps/tanzu-java-web-app-default@sha256:5369ed609063a1b464d950ab46a824d9ec73771789e33ec643d87b4c1c070de7
+        image: harbor.solateam.be/tap-apps/tanzu-java-web-app-default@sha256:8ae95eedf5ab025d80abd9a510c2433176e8175ed9e8e31b6dfd681caf89dc7a
         livenessProbe:
           httpGet:
             path: /livez
