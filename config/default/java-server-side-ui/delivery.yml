@@ -47,7 +47,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.solateam.be/tap-apps/java-server-side-ui-default@sha256:1a96167eaf77c4e5b6d336fccc9905212fc622467988a8824c5f7703a1261d13
+        image: harbor.solateam.be/tap-apps/java-server-side-ui-default@sha256:2faa95f91a3054d7139d117e9834676aaf0067ed89b987756fed759497cfa802
         livenessProbe:
           httpGet:
             path: /livez
