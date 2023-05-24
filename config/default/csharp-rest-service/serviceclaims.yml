@@ -35,7 +35,7 @@ spec:
   service:
     apiVersion: services.apps.tanzu.vmware.com/v1alpha1
     kind: ResourceClaim
-    name: customer-database-claim
+    name: postgre-1
   workload:
     apiVersion: serving.knative.dev/v1
     kind: Service
