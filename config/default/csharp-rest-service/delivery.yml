@@ -30,7 +30,7 @@ spec:
           developer-conventions/add-source-image-label
           spring-boot-convention/auto-configure-actuators-check
           spring-boot-convention/app-live-view-appflavour-check
-        developer.apps.tanzu.vmware.com/image-source-digest: harbor.solateam.be/tap-apps/where-for-dinner-api-gateway:latest@sha256:702ab36beb28cb71c4498e1f1c930aa26ffebef52870e6a96dbed1931591ecfd
+        developer.apps.tanzu.vmware.com/image-source-digest: harbor.solateam.be/tap-apps/where-for-dinner-api-gateway:latest@sha256:e6bb7c72c560ff080a055a7b8562317c37b835eceaec90820c39e9e0367d84ad
         developer.conventions/target-containers: workload
       labels:
         app.kubernetes.io/component: run
@@ -47,7 +47,7 @@ spec:
       - env:
         - name: DOTNET_CLI_TELEMETRY_OPTOUT
           value: "true"
-        image: harbor.solateam.be/tap-apps/csharp-rest-service-default@sha256:0836d0bffb3d4348aaddd43155fc56c9ba46b720135f64febd5f79be6f381d96
+        image: harbor.solateam.be/tap-apps/csharp-rest-service-default@sha256:272f0a28c84e1af1691f8e9a74cad73e0c968c7e2ba4adb7c0703518ae59f7ed
         name: workload
         resources: {}
         securityContext:
