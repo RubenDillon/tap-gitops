@@ -7,7 +7,9 @@ metadata:
     ootb.apps.tanzu.vmware.com/apidescriptor-ref: "true"
     kapp.k14s.io/change-rule: upsert after upserting servicebinding.io/ServiceBindings
   labels:
+    app.kubernetes.io/name: spring-sensors
     app.kubernetes.io/part-of: spring-sensors
+    app.tanzu.vmware.com/workload-type: web-app
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/component: run
@@ -37,7 +39,9 @@ spec:
         developer.conventions/target-containers: workload
       labels:
         app.kubernetes.io/component: run
+        app.kubernetes.io/name: spring-sensors
         app.kubernetes.io/part-of: spring-sensors
+        app.tanzu.vmware.com/workload-type: web-app
         apps.tanzu.vmware.com/auto-configure-actuators: "false"
         apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
@@ -51,6 +55,8 @@ spec:
     spec:
       containers:
       - env:
+        - name: TESTVAR
+          value: aoeu
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
         image: harbor.solateam.be/tap-apps/spring-sensors-default@sha256:c1298c2fc066f3150aee195056885d0def1204aa97795b7d70343a0393f3d532
