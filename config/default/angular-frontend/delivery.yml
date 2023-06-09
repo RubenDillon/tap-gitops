@@ -29,7 +29,7 @@ spec:
         carto.run/workload-name: angular-frontend
     spec:
       containers:
-      - image: harbor.solateam.be/tap-apps/angular-frontend-default@sha256:6ba593cabd0cfb71d5c99262ed46effaf544e81577d9b65228e7f74ed36089ee
+      - image: harbor.solateam.be/tap-apps/angular-frontend-default@sha256:e800ed27365a0a4c82b3015ccac7a372f56252297a17af303f7c4cce019ce85a
         name: workload
         resources: {}
         securityContext:
