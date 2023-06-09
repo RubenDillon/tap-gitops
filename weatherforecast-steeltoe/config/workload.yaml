@@ -15,6 +15,14 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/RubenDillon/tap-gitops/weatherforecast-steeltoe
       ref:
         branch: main
+  - name: api_descriptor
+      value:
+        type: openapi
+        location:
+          path: "/v1/swagger.json"
+        system: dev
+        owner: team-a
+        description: "A set of API endpoints."
