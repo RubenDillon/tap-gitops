@@ -8,6 +8,8 @@ metadata:
     tanzu.app.live.view: "true"
     tanzu.app.live.view.application.flavours: steeltoe
     tanzu.app.live.view.application.name: weatherforecast-steeltoe
+    apis.apps.tanzu.vmware.com/register-api: "true"     
+    
 spec:
   params:
   - name: annotations
