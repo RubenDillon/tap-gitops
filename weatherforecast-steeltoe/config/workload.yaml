@@ -11,8 +11,6 @@ metadata:
     apis.apps.tanzu.vmware.com/register-api: "true"     
     
 spec:
-  providesApis:
-    - weatherforecast-steeltoe
   params:
   - name: annotations
     value:
