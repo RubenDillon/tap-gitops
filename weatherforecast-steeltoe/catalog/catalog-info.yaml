@@ -21,3 +21,5 @@ spec:
   owner: default-team
   providesApis:
     - weatherforecast-steeltoe
+  consumesApis: # list of APIs consumed by the Component
+    - example-api-2
