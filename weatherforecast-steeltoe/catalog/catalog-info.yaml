@@ -20,6 +20,6 @@ spec:
   lifecycle: experimental
   owner: default-team
   providesApis:
-    - weatherforecast-steeltoe
+    - resource:default/weatherforecast-steeltoe
   consumesApis: # list of APIs consumed by the Component
     - example-api-2
