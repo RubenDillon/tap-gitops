@@ -34,7 +34,7 @@ spec:
         tanzu.app.live.view.application.name: weatherforecast-steeltoe
     spec:
       containers:
-      - image: harbor.solateam.be/tap-apps/weatherforecast-steeltoe-default@sha256:2ef3234b218f439f91c084fba45d0c3641e5aac93626808944e324b622b59df2
+      - image: harbor.solateam.be/tap-apps/weatherforecast-steeltoe-default@sha256:4e46594111f2cb1388dedbf2e93872fec7145f19209be1af24bc84003eff7328
         name: workload
         resources: {}
         securityContext:
