@@ -10,7 +10,7 @@ metadata:
     - tanzu
     - ruben-dillon
     - github
-    -tap-gitops
+    - tap-gitops
   links:
     - url: https://www.youtube.com/rubendillon
       title: Ruben Dillon YouTube Channel
