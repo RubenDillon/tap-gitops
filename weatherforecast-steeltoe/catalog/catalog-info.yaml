@@ -16,8 +16,8 @@ metadata:
       title: Ruben Dillon YouTube Channel
       icon: dashboard
     - url: https://www.vmware.com
-    title: VMware official site
-    icon: dashboard
+      title: VMware official site
+      icon: dashboard
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=weatherforecast-steeltoe"
 spec:
