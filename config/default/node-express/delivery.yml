@@ -29,7 +29,7 @@ spec:
         carto.run/workload-name: node-express
     spec:
       containers:
-      - image: harbor.solateam.be/tap-apps/node-express-default@sha256:3de5e2191e578e0d821e7ec90d28fbc70a57d901955a3a2ff81a8ed5a6b2782d
+      - image: harbor.solateam.be/tap-apps/node-express-default@sha256:2ef5fb5590540dcae4d2cb558484bb32de041cda41588adad321322ff78ec95c
         name: workload
         resources: {}
         securityContext:
